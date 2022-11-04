@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.seamlessly.pages.FileUploadDeletePage;
 
+import net.seamlessly.utilities.BrowserUtils;
 import org.junit.Assert;
 
 public class UploadEditDeleteFileStepDefs {
@@ -16,7 +17,9 @@ public class UploadEditDeleteFileStepDefs {
 
     @When("the user upload {string}")
     public void the_user_upload(String fileName) {
+        BrowserUtils.waitFor(3);
         new FileUploadDeletePage().uploadFile(fileName);
+        BrowserUtils.waitFor(3);
     }
 
     @When("the user create new folder {string}")

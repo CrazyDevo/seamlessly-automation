@@ -78,7 +78,7 @@ public class FileUploadDeletePage extends BasePage {
 
    public void uploadFile(String fileName){
        addIcon.click();
-       uploadFile.sendKeys((System.getProperty("user.dir") + "\\src\\test\\resources\\uploadedFiles\\"+fileName));
+       uploadFile.sendKeys((System.getProperty("user.dir") + "/src/test/resources/uploadedFiles/"+fileName));
        waitUntilProgressbarDisappear();
        BrowserUtils.waitFor(3);
    }
