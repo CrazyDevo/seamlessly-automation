@@ -1,0 +1,11 @@
+User Story :
+
+As a user, I should be able to create a new task list or a single task and add any task to completed and importants tasks list.
+
+Acceptance Criteria:
+
+User can create a new list of tasks**
+User can create a new task
+User can add any task to the list of completed tasks by clicking on the checkbox near the task name
+User can add any task to the list of important tasks by clicking on the star icon on the right side of task line
+User can see the number of all uncompleted tasks next to the Current tab
